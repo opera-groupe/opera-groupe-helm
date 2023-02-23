@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "frontend-tenant-appointment-booker.fullname" . }}-test-connection"
+  labels:
+    {{- include "frontend-tenant-appointment-booker.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "frontend-tenant-appointment-booker.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

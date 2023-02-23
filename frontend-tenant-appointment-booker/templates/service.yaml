@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "frontend-tenant-appointment-booker.fullname" . }}
+  labels:
+    {{- include "frontend-tenant-appointment-booker.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "frontend-tenant-appointment-booker.selectorLabels" . | nindent 4 }}
