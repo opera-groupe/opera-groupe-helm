@@ -47,6 +47,62 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          env:
+            - name: ADMIN_JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: ADMIN_JWT_SECRET
+            - name: API_TOKEN_SALT
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: API_TOKEN_SALT
+            - name: APP_KEYS
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: APP_KEYS
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: JWT_SECRET
+            - name: SMS_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMS_API_KEY
+            - name: SMS_API_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMS_API_URL
+            - name: SMTP_DEFAULT_FROM
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_DEFAULT_FROM
+            - name: SMTP_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_HOST
+            - name: SMTP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_PASSWORD
+            - name: SMTP_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_PORT
+            - name: SMTP_USER
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_USER
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
