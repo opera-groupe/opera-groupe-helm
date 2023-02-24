@@ -103,6 +103,31 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: SMTP_USER
+            - name: DATABASE_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: db-config
+                  key: DATABASE_HOST
+            - name: DATABASE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-config
+                  key: DATABASE_NAME
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-config
+                  key: DATABASE_PASSWORD
+            - name: DATABASE_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: db-config
+                  key: DATABASE_PORT
+            - name: DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-config
+                  key: DATABASE_USER
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
