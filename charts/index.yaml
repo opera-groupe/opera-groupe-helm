@@ -3,9 +3,9 @@ entries:
   cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-24T12:11:35.157936+01:00"
+    created: "2023-02-24T14:12:57.914836+01:00"
     description: A Helm chart for Kubernetes
-    digest: 5a2fe867127a46fa051782f8be652c1131a9604ac3c3838b2d04857d1b3ab3df
+    digest: 6d9673ae79a8759615865a5dfa0837c73f0a67e208b8fb6a2869c5d7c353c479
     name: cms
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   frontend-tenant-appointment-booker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-24T12:11:35.158879+01:00"
+    created: "2023-02-24T14:12:57.915319+01:00"
     description: A Helm chart for Kubernetes
-    digest: a2ba14904d9d630a9f191a6a72afa954e4ebccb899bfe14d0142ee0555f5b382
+    digest: d0f0f65036143803ce2a0b63390103fc84bff5bc7f0add078a550c7b6c3bbfa7
     name: frontend-tenant-appointment-booker
     type: application
     urls:
     - frontend-tenant-appointment-booker-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-24T12:11:35.157028+01:00"
+generated: "2023-02-24T14:12:57.913526+01:00"
