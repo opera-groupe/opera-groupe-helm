@@ -103,6 +103,16 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: SMTP_USER
+            - name: EMAIL_CC
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: EMAIL_CC
+            - name: TENANT_APPOINTMENT_BOOKER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: TENANT_APPOINTMENT_BOOKER_URL
             - name: DATABASE_HOST
               valueFrom:
                 secretKeyRef:

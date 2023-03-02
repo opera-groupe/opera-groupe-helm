@@ -47,6 +47,22 @@ spec:
               port: 3000
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          env:
+            - name: NEXT_PUBLIC_SERVER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: tenant-appointment-booker-env
+                  key: NEXT_PUBLIC_SERVER_URL
+            - name: SERVER_BASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: tenant-appointment-booker-env
+                  key: SERVER_BASE_URL
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: tenant-appointment-booker-env
+                  key: API_KEY
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
