@@ -68,6 +68,16 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: JWT_SECRET
+            - name: OG_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OG_API_KEY
+            - name: OG_API_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OG_API_URL
             - name: SMS_API_KEY
               valueFrom:
                 secretKeyRef:
