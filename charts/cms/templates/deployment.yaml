@@ -108,7 +108,7 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: SMTP_PORT
-            - name: SMTP_USER
+            - name: SMTP_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: api-env

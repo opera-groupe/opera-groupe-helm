@@ -3,9 +3,9 @@ entries:
   cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-06T11:48:41.7066+01:00"
+    created: "2023-03-10T17:33:35.524931+01:00"
     description: A Helm chart for Kubernetes
-    digest: 94d63186bff87d50512ae4b9e366d8f4ec4519d3b6c5dcfbc14e66b0e50254a0
+    digest: 61faaa0180f759b10a386483118a803c1108588007bbb9202a7553886cc8bdb5
     name: cms
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   frontend-tenant-appointment-booker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-06T11:48:41.706935+01:00"
+    created: "2023-03-10T17:33:35.526981+01:00"
     description: A Helm chart for Kubernetes
     digest: f0fc6cd1c66a78430a057c2a75d7b790b5990c099c0963d6db81878b32173556
     name: frontend-tenant-appointment-booker
@@ -22,4 +22,4 @@ entries:
     urls:
     - https://opera-groupe.github.io/opera-groupe-helm/charts/frontend-tenant-appointment-booker-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-06T11:48:41.706096+01:00"
+generated: "2023-03-10T17:33:35.524201+01:00"
