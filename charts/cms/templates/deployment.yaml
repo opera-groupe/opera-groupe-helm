@@ -148,6 +148,8 @@ spec:
                 secretKeyRef:
                   name: db-config
                   key: DATABASE_USER
+            - name: TZ
+              value: {{ .Values.timeZone }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

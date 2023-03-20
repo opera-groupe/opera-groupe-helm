@@ -81,3 +81,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+timeZone: Europe/Paris
