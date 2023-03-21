@@ -123,6 +123,11 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: TENANT_APPOINTMENT_BOOKER_URL
+            - name: CRON_NOTIFICATION_REMINDER
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: CRON_NOTIFICATION_REMINDER
             - name: DATABASE_HOST
               valueFrom:
                 secretKeyRef:
