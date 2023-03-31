@@ -78,16 +78,26 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: OG_API_URL
-            - name: SMS_API_KEY
+            - name: SMS_ENVOI_USER_KEY
               valueFrom:
                 secretKeyRef:
                   name: api-env
-                  key: SMS_API_KEY
-            - name: SMS_API_URL
+                  key: SMS_ENVOI_USER_KEY
+            - name: SMS_ENVOI_ACCESS_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: api-env
-                  key: SMS_API_URL
+                  key: SMS_ENVOI_ACCESS_TOKEN
+            - name: SMS_ENVOI_DEFAULT_MESSAGE_TYPE
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMS_ENVOI_DEFAULT_MESSAGE_TYPE
+            - name: SMS_ENVOI_DEFAULT_SENDER
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMS_ENVOI_DEFAULT_SENDER
             - name: SMTP_DEFAULT_FROM
               valueFrom:
                 secretKeyRef:
