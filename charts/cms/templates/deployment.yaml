@@ -139,6 +139,31 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: CRON_NOTIFICATION_REMINDER
+            - name: OPERA_GROUPE_DATABASE_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OPERA_GROUPE_DATABASE_HOST
+            - name: OPERA_GROUPE_DATABASE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OPERA_GROUPE_DATABASE_NAME
+            - name: OPERA_GROUPE_DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OPERA_GROUPE_DATABASE_PASSWORD
+            - name: OPERA_GROUPE_DATABASE_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OPERA_GROUPE_DATABASE_PORT
+            - name: OPERA_GROUPE_DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: OPERA_GROUPE_DATABASE_USERNAME
             - name: DATABASE_HOST
               valueFrom:
                 secretKeyRef:
