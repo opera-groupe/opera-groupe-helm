@@ -3,7 +3,7 @@ entries:
   cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T14:20:17.5779067+02:00"
+    created: "2023-05-19T12:20:49.802146+02:00"
     description: A Helm chart for Kubernetes
     digest: 3ba00f0106319fc040fe0b5d714a8b165c0173102cf3503bd2a3eef1de75e361
     name: cms
@@ -14,9 +14,9 @@ entries:
   documentation:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T14:20:17.5786372+02:00"
+    created: "2023-05-19T12:20:49.8025313+02:00"
     description: A Helm chart for Kubernetes
-    digest: 2d1512e4ab6946aeccd64b37f8a873e1f978b707d33f6d09ca4f2530dec0c634
+    digest: 64679e201eedc947d1989bbd313384444632169780d26355800180a342414c16
     name: documentation
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
   frontend-contractor-extranet:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T14:20:17.5792986+02:00"
+    created: "2023-05-19T12:20:49.8030198+02:00"
     description: A Helm chart for Kubernetes
     digest: 90e624967da5184e09ee9199e24cdc79b8608e42e75e158b2d037b9176128d8d
     name: frontend-contractor-extranet
@@ -36,7 +36,7 @@ entries:
   frontend-tenant-appointment-booker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T14:20:17.5799409+02:00"
+    created: "2023-05-19T12:20:49.8034903+02:00"
     description: A Helm chart for Kubernetes
     digest: 21044ed80e477c7b1d3bc153e7c5cc07e504859c0c72f35e96e0f2963dfd4a6d
     name: frontend-tenant-appointment-booker
@@ -47,7 +47,7 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T14:20:17.5804246+02:00"
+    created: "2023-05-19T12:20:49.8041391+02:00"
     description: A Helm chart for Kubernetes
     digest: 987c286eeb2db0db357616eae0dc7997063e37320e5632b3ed7874b22a933cb6
     name: keycloak
@@ -55,4 +55,15 @@ entries:
     urls:
     - https://opera-groupe.github.io/opera-groupe-helm/charts/keycloak-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-11T14:20:17.5769006+02:00"
+  user-contractor-auth:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-19T12:20:49.804515+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 13fa10915fb2ab9b01e4b53a00294d9f0407f88293e06afe3cef74afe5501497
+    name: user-contractor-auth
+    type: application
+    urls:
+    - https://opera-groupe.github.io/opera-groupe-helm/charts/user-contractor-auth-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-19T12:20:49.80142+02:00"
