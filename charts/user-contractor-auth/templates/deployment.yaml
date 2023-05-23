@@ -65,6 +65,8 @@ spec:
               value: {{ .Values.cms.key }}
             - name: REDIRECT_URL
               value: {{ .Values.redirectUrl }}
+            - name: SAME_SITE_COOKIE
+              value: {{ .Values.sameSiteCookie }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
