@@ -164,6 +164,11 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: OPERA_GROUPE_DATABASE_USERNAME
+            - name: FULL_DOMAINE_NAME_WITH_HTTPS
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: FULL_DOMAINE_NAME_WITH_HTTPS
             - name: DATABASE_HOST
               valueFrom:
                 secretKeyRef:
