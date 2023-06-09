@@ -164,6 +164,31 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: OPERA_GROUPE_DATABASE_USERNAME
+            - name: SELLSY_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SELLSY_URL
+            - name: SELLSY_API_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SELLSY_API_URL
+            - name: SELLSY_AUTH_URL
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SELLSY_AUTH_URL
+            - name: SELLSY_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SELLSY_CLIENT_ID
+            - name: SELLSY_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SELLSY_CLIENT_SECRET
             - name: FULL_DOMAINE_NAME_WITH_HTTPS
               valueFrom:
                 secretKeyRef:
