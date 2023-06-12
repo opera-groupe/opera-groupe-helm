@@ -129,6 +129,11 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: EMAIL_CC
+            - name: EMAIL_CC_TO_SAVE
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: EMAIL_CC_TO_SAVE
             - name: TENANT_APPOINTMENT_BOOKER_URL
               valueFrom:
                 secretKeyRef:
