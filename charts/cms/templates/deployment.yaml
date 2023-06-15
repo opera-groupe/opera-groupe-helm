@@ -194,6 +194,16 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: SELLSY_CLIENT_SECRET
+            - name: EMAIL_ESTIMATE_FROM_PARIS
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: EMAIL_ESTIMATE_FROM_PARIS
+            - name: EMAIL_ESTIMATE_FROM_OTHER
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: EMAIL_ESTIMATE_FROM_OTHER
             - name: DATABASE_HOST
               valueFrom:
                 secretKeyRef:
