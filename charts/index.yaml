@@ -13,7 +13,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-04T12:05:53+0000"
+    created: "2025-06-04T12:05:53+00:00"
     description: A Helm chart for Kubernetes
     digest: 02dbc9abe121fa84eb657a6130656fe89ec63e090f1015021c72aa6d8cca41c9
     name: cms
