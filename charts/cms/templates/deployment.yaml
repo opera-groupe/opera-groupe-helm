@@ -101,6 +101,11 @@ spec:
                 secretKeyRef:
                   name: api-env
                   key: SMS_ENVOI_DEFAULT_SENDER
+            - name: SMTP_AUTH
+              valueFrom:
+                secretKeyRef:
+                  name: api-env
+                  key: SMTP_AUTH
             - name: SMTP_DEFAULT_FROM
               valueFrom:
                 secretKeyRef:
