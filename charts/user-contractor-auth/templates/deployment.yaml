@@ -49,20 +49,10 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
-            - name: KEYCLOAK_BASE_URL
-              value: {{ .Values.keycloak.baseUrl }}
-            - name: KEYCLOAK_REALM
-              value: {{ .Values.keycloak.realm }}
-            - name: KEYCLOAK_CLIENT_ID
-              value: {{ .Values.keycloak.clientId }}
-            - name: KEYCLOAK_CLIENT_SECRET
-              value: {{ .Values.keycloak.clientSecret }}
             - name: DOMAIN
               value: {{ .Values.domain }}
             - name: CMS_URL
               value: {{ .Values.cms.url }}
-            - name: CMS_KEY
-              value: {{ .Values.cms.key }}
             - name: REDIRECT_URL
               value: {{ .Values.redirectUrl }}
             - name: SAME_SITE_COOKIE
