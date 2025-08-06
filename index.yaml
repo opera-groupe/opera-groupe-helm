@@ -58,6 +58,16 @@ entries:
   user-contractor-auth:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-08-06T15:41:04.003451498Z"
+    description: A Helm chart for Kubernetes
+    digest: 220abf77f3a806a7eb15f153a042f702038de6dd58f2140228ce8ea2a2e9b7b6
+    name: user-contractor-auth
+    type: application
+    urls:
+    - user-contractor-auth-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-08-06T15:37:17.426162685Z"
     description: A Helm chart for Kubernetes
     digest: f78055e92b4a9b271bdd4555f91dd3df717ee498f62ba4bddabfae9fcf04e460
@@ -66,4 +76,4 @@ entries:
     urls:
     - user-contractor-auth-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-06T15:37:17.42617004Z"
+generated: "2025-08-06T15:41:04.003460515Z"
