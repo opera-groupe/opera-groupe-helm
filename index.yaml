@@ -1,0 +1,69 @@
+apiVersion: v1
+entries:
+  cms:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:16.719788237Z"
+    description: A Helm chart for Kubernetes
+    digest: 25876f68072eea36411778e19231cffcf99e742564731d1f28057e3c0f0211ee
+    name: cms
+    type: application
+    urls:
+    - cms-0.3.0.tgz
+    version: 0.3.0
+  documentation:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:16.860461424Z"
+    description: A Helm chart for Kubernetes
+    digest: 4562e49d95099493df0259824bbc220391411df9971e43bfa0c8db7736550e96
+    name: documentation
+    type: application
+    urls:
+    - documentation-0.1.0.tgz
+    version: 0.1.0
+  frontend-contractor-extranet:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:16.98622686Z"
+    description: A Helm chart for Kubernetes
+    digest: a9150a8cb9c804caf30d05c590b802dcbb038d4c57431db0f2f2e4b13116c2a2
+    name: frontend-contractor-extranet
+    type: application
+    urls:
+    - frontend-contractor-extranet-0.1.0.tgz
+    version: 0.1.0
+  frontend-tenant-appointment-booker:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:17.106641318Z"
+    description: A Helm chart for Kubernetes
+    digest: 2fc6057dd836effcabd01d8a6cb8de4c81a54336366fc4b3700f7cfb336dfdc8
+    name: frontend-tenant-appointment-booker
+    type: application
+    urls:
+    - frontend-tenant-appointment-booker-0.1.0.tgz
+    version: 0.1.0
+  keycloak:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:17.232501444Z"
+    description: A Helm chart for Kubernetes
+    digest: 072be11d0aafdbb7b6081b9f06cc448b3aa038d93c3327e3d685d2b86fe179d8
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-0.1.0.tgz
+    version: 0.1.0
+  user-contractor-auth:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-06T15:37:17.426162685Z"
+    description: A Helm chart for Kubernetes
+    digest: f78055e92b4a9b271bdd4555f91dd3df717ee498f62ba4bddabfae9fcf04e460
+    name: user-contractor-auth
+    type: application
+    urls:
+    - user-contractor-auth-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-08-06T15:37:17.42617004Z"
